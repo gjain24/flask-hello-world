@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/gjain24/flask-hello-world.git'
+                git branch: 'master', url: 'https://github.com/gjain24/flask-hello-world.git'
             }
         }
         stage('Build Docker Image') {
